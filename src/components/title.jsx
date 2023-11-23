@@ -1,4 +1,4 @@
-import { TweetTitleIcon } from "./icon";
+import { BadgeIcon } from "./icon";
 
 export function PageTitle({value}){
     return(
@@ -14,7 +14,7 @@ export function TweetTitle({author, address, datePublication}){
             <h3 className="tweet-title-author">
                 {author}
             </h3>
-            <TweetTitleIcon />
+            <BadgeIcon />
             <span className="tweet-title-details">
                 {address}
             </span>

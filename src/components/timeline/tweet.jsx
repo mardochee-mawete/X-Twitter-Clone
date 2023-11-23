@@ -11,14 +11,17 @@ function TweetText({textContent}){
 }
 
 function TweetImage({source}){
-    return(
-        <div className="tweet-image">
-            <img src={source} alt="tweet image" />
-        </div>
-    )
+    if(source !=''){
+        return(
+            <div className="tweet-image">
+                <img src={source} alt="tweet image" />
+            </div>
+        )
+    }
 }
 
 function TweetBody({author, address, datePublication, textContent, sourceImageTweet}){
+   
     return(
         <div className="tweet-body">
             <TweetTitle author={author} address={address} datePublication={datePublication}/>
@@ -29,35 +32,37 @@ function TweetBody({author, address, datePublication, textContent, sourceImageTw
 }
 
 function TweetActions({valueReply, valueReposter, valueLike, valueShare}){
-    <div className="tweet-actions">
-        <div className="tweet-action">
-            <ReplyIcon />
-            <span>
-                {valueReply}
-            </span>
+    return(    
+        <div className="tweet-actions">
+            <div className="tweet-action">
+                <ReplyIcon />
+                <span>
+                    {valueReply}
+                </span>
+            </div>
+            <div className="tweet-action">
+                <ReposterIcon />
+                <span>
+                    {valueReposter}
+                </span>
+            </div>
+            <div className="tweet-action">
+                <LikeIcon />
+                <span>
+                    {valueLike}
+                </span>
+            </div>
+            <div className="tweet-action">
+                <ShareIcon />
+                <span>
+                    {valueShare}
+                </span>
+            </div>
         </div>
-        <div className="tweet-action">
-            <ReposterIcon />
-            <span>
-                {valueReposter}
-            </span>
-        </div>
-        <div className="tweet-action">
-            <LikeIcon />
-            <span>
-                {valueLike}
-            </span>
-        </div>
-        <div className="tweet-action">
-            <ShareIcon />
-            <span>
-                {valueShare}
-            </span>
-        </div>
-    </div>
+    )
 }
 
-function Data({sourceProfilePhoto, author, address, datePublication, textContent, sourceImageTweet, valueReply, valueReposter, valueLike, valueShare }){
+function TweetData({sourceProfilePhoto, author, address, datePublication, textContent, sourceImageTweet, valueReply, valueReposter, valueLike, valueShare }){
     return(
         <div className="tweet">
             <ProfilePhoto source={sourceProfilePhoto } />
@@ -71,7 +76,68 @@ function Data({sourceProfilePhoto, author, address, datePublication, textContent
 
 function Tweet(){
     return(
-        <Data sourceProfilePhoto="src/images/tweet-profile-photo.png" author="CNN" address="@CNN" datePublication="7m"/>
+        <>
+            <TweetData 
+                sourceProfilePhoto="src/images/tweet-profile-photo.png" 
+                author="CNN" 
+                address="@CNN" 
+                datePublication="7m"
+                textContent ='President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a "major breakthrough" that would serve to both strengthen the US steel industry and combat the global climate crisis.'
+                sourceImageTweet =""
+                valueReply = "57"
+                valueReposter ="144"
+                valueLike ="184"
+                valueShare=""
+            />
+              <TweetData 
+                sourceProfilePhoto="src/images/image1.png" 
+                author="The New York Times" 
+                address="@nytimes" 
+                datePublication="2h"
+                textContent ='Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land'
+                sourceImageTweet ="src/images/tweet-image.png"
+                valueReply = "19"
+                valueReposter ="48"
+                valueLike ="482"
+                valueShare=""
+            />
+            <TweetData 
+                sourceProfilePhoto="src/images/iconTweeter.png" 
+                author="Twitter" 
+                address="@Twitter" 
+                datePublication="Oct 29"
+                textContent ='BIG NEWS lol jk still Twitter'
+                sourceImageTweet =""
+                valueReply = "6.8K"
+                valueReposter ="36.6K"
+                valueLike ="267.1K"
+                valueShare=""
+            />
+             <TweetData 
+                sourceProfilePhoto="src/images/iconTweeter.png" 
+                author="Twitter" 
+                address="@Twitter" 
+                datePublication="Oct 4"
+                textContent ='hello literally everyone'
+                sourceImageTweet =""
+                valueReply = "118.7K"
+                valueReposter ="785.4K"
+                valueLike ="3.3M"
+                valueShare=""
+            />
+              <TweetData 
+                sourceProfilePhoto="src/images/iconTweeter.png" 
+                author="Twitter" 
+                address="@Twitter" 
+                datePublication="Oct 4"
+                textContent ='hello literally everyone'
+                sourceImageTweet ="src/images/tweet-image.png"
+                valueReply = "118.7K"
+                valueReposter ="785.4K"
+                valueLike ="3.3M"
+                valueShare=""
+            />
+        </>
     )
 }
 export default Tweet;
