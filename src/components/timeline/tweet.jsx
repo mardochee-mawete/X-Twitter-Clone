@@ -78,7 +78,7 @@ function Tweet(){
     return(
         <>
             <TweetData 
-                sourceProfilePhoto="src/images/tweet-profile-photo.png" 
+                sourceProfilePhoto="src/images/Tweet-Profile-Photo1.png" 
                 author="CNN" 
                 address="@CNN" 
                 datePublication="7m"
@@ -90,7 +90,7 @@ function Tweet(){
                 valueShare=""
             />
               <TweetData 
-                sourceProfilePhoto="src/images/image1.png" 
+                sourceProfilePhoto="src/images/Tweet-Profile-Photo2.png" 
                 author="The New York Times" 
                 address="@nytimes" 
                 datePublication="2h"

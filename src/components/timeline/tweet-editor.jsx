@@ -34,7 +34,6 @@ function TweetEditor(){
                     <TweetEditorButtons />
                 </form>
             </div>
-           
         </div>
     )
 }
