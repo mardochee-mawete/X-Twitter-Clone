@@ -1,4 +1,4 @@
-import ProfilePhoto from "../profile";
+import ProfilePhoto from "../avatar";
 import { ReplyIcon, ReposterIcon, LikeIcon, ShareIcon} from "../icon";
 import { TweetTitle } from "../title";
 

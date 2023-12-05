@@ -1,4 +1,4 @@
-import ProfilePhoto from "../profile";
+import ProfilePhoto from "../avatar";
 import InputText from "../inputText";
 import { MediaIcon, GifIcon, PollIcon, EmojiIcon, ScheduleIcon} from "../icon";
 import Button from "../button";
