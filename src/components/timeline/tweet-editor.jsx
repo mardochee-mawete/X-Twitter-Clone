@@ -27,7 +27,7 @@ function TweetEditorButtons(){
 function TweetEditor(){
     return(
         <div className="tweet-editor">
-            <ProfilePhoto source="src/images/profile-photo.png"/>
+            <ProfilePhoto source="src/images/profile-photo.png" className="avatar"/>
             <div className="tweet-editor-form">
                 <form action="">
                     <InputText className="tweet-editor-input" placeholder="What's happening?"/>

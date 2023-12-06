@@ -11,7 +11,7 @@ function TweetText({textContent}){
 }
 
 function TweetImage({source}){
-    if(source !=''){
+    if(source){
         return(
             <div className="tweet-image">
                 <img src={source} alt="tweet image" />
@@ -65,7 +65,7 @@ function TweetActions({valueReply, valueReposter, valueLike, valueShare}){
 function TweetData({sourceProfilePhoto, author, address, datePublication, textContent, sourceImageTweet, valueReply, valueReposter, valueLike, valueShare }){
     return(
         <div className="tweet">
-            <ProfilePhoto source={sourceProfilePhoto } />
+            <ProfilePhoto source={sourceProfilePhoto } className="tweet-avatar"/>
             <div className="tweet-content">
                 <TweetBody author={author} address={address} datePublication={datePublication} textContent={textContent} sourceImageTweet={sourceImageTweet}/>
                 <TweetActions valueReply={valueReply} valueReposter={valueReposter} valueLike={valueLike} valueShare={valueShare}/>

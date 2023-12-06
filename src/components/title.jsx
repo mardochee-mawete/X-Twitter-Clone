@@ -8,20 +8,30 @@ export function PageTitle({value}){
     )
 }
 
+export function TweetTitleAuthor({value}){
+    return(
+        <h3 className="tweet-title-author">
+            {value}
+        </h3>
+    )
+}
+
+export function TweetTitleDetails({value}){
+    return(
+        <span className="tweet-title-details">
+            {value}
+        </span>
+    )
+}
+
 export function TweetTitle({author, address, datePublication}){
     return(
         <div className="tweet-title">
-            <h3 className="tweet-title-author">
-                {author}
-            </h3>
+            <TweetTitleAuthor value={author}/>
             <BadgeIcon />
-            <span className="tweet-title-details">
-                {address}
-            </span>
-            <span className="tweet-title-details"> . </span>
-            <span className="tweet-title-details">
-                {datePublication}
-            </span>
+            <TweetTitleDetails value={address}/>
+            <TweetTitleDetails value="."/>
+            <TweetTitleDetails value={datePublication}/>
         </div>
     )
 }

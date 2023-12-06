@@ -1,6 +1,6 @@
-export default function ProfilePhoto({source}){
+export default function ProfilePhoto({className,source}){
     return(
-        <div className="avatar">
+        <div className={className}>
             <img src={source} alt="avatar" />
         </div>
     )
