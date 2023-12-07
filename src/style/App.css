@@ -219,7 +219,7 @@ ul{
 }
 
 .trends{
-    flex: 0 0 300px;
+    flex: 0 0 360px;
 }
 .search-tweet, .trending-list, .follow-list{
     margin-bottom: 1rem;
@@ -246,7 +246,7 @@ ul{
     padding: 1rem;
     background-color: #202327;
 }
-.container-title-trending-list{
+.container-title-trending-list, .container-title-follow-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,4 +269,38 @@ ul{
     border: none;
     font-size: 1.2rem;
     font-weight: 600;
+}
+.account-follow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.avatar-follow {
+    height: 48px;
+    width: 48px;
+    flex: 0 0 48px;
+}
+.avatar-follow img{
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+.profile-Autor-follow{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.details-Autor-follow{
+    display: flex;
+    gap: .2rem;
+}
+.button-follow{
+    text-transform: capitalize;
+    padding: .7rem 1.2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #EFF3F4;
+    color: #0F1419;
+    font-size: 1rem; 
 }
