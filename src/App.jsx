@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom/dist/index.js";
 import Home from "./pages/home.jsx";
 import Profile from "./pages/profile.jsx";
 import Layout from "./components/layout.jsx";
@@ -10,8 +11,13 @@ export default function App() {
   return (
     <Layout>
       <>
-        <Sidebar />
-        <Profile />
+        <BrowserRouter>
+          <Sidebar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/profile' element={<Profile />} />
+          </Routes>
+        </BrowserRouter>
         <Trends />
       </>
     </Layout>

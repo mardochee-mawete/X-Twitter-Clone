@@ -100,6 +100,18 @@ export default function Profile(){
              numberSubscribers="8"
             />
             <ProfileAction />
+            <TweetData 
+                sourceProfilePhoto="src/images/Tweet-Profile-Photo2.png" 
+                author="The New York Times" 
+                address="@nytimes" 
+                datePublication="2h"
+                textContent =''
+                sourceImageTweet ="src/images/tweet-image.png"
+                valueReply = "19"
+                valueReposter ="48"
+                valueLike ="482"
+                valueShare=""
+            />
              <TweetData 
                 sourceProfilePhoto="src/images/profile-photo.png"
                 author="Bradley Ortiz"
