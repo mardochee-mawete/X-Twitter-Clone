@@ -11,7 +11,7 @@ export default function App() {
     <Layout>
       <>
         <Sidebar />
-        <Home />
+        <Profile />
         <Trends />
       </>
     </Layout>

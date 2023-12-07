@@ -6,9 +6,9 @@ export function TrendLists({subtitle,tag, countTweet}){
     return(
         <div className="trendLists">
             <ul>
-                <li className="tweet-title-details">{subtitle}</li>
+                <li className="subtitle">{subtitle}</li>
                 <li className="tag-trend">{tag}</li>
-                <li className="tweet-title-details">{countTweet}</li>
+                <li className="countTweet">{countTweet}</li>
             </ul>
             <MoreIconDot />
         </div>

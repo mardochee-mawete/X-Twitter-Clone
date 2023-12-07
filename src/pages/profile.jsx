@@ -1,17 +1,23 @@
 import { TweetData, TweetImage } from "../components/timeline/tweet"
 import Header from "../components/header"
+import ProfilePhoto from "../components/avatar"
+import Button from "../components/button"
 
-export function EditorProfile(){
+export function ProfileDetails(){
     return(
         <>
-            <div className="photo-curvature">
-                <img src="src/images/tweet-image.png" alt="photo curvature" />
-            </div>  
+            <ProfilePhoto source="src/images/tweet-image.png" className="photo-curvature" />
             <div>
-                <div>
-                    <img src="src/images/profile-photo.png" alt="profile photo" />
-                </div>
-               
+                <ProfilePhoto source="src/images/profile-photo.png" className="photo-profile" />
+            </div>
+            <div>
+              <div className="container-edit-profile-button">
+                <Button value="Edit profile" className="button-edit-profile"/>
+              </div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div> 
             </div>
         </>
     )
@@ -21,7 +27,7 @@ export default function Profile(){
     return(
         <main className="timeline profile">
             <Header valuePageTitle="Bradley Ortiz"  />
-            <EditorProfile />
+            <ProfileDetails />
             <TweetData 
                 sourceProfilePhoto="src/images/Tweet-Profile-Photo1.png" 
                 author="CNN" 

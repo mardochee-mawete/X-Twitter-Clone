@@ -6,6 +6,9 @@
     --width-profile-photo : 48px;
     --height-profile-photo : 48px;
     --flex-profile-photo  : 0 0 48px;
+    --font-size-subtitle-and-countTweet : .8125rem; 
+    --color-details : #6E767D;
+    --height-header : 53px;
 }
 
 body{
@@ -29,11 +32,14 @@ body{
 }
 .header {
     padding: 0 1rem;
-    height: 53px;
+    height: var(--height-header);
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #2F3336;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .top-tweets {
     width: 1.5rem;
@@ -58,7 +64,7 @@ body{
 }
 .avatar img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 100%;
 }
 .tweet-editor-form {
@@ -115,7 +121,7 @@ body{
 }
 .tweet-avatar img{
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 100%;
 }
 .tweet-content{
@@ -146,7 +152,7 @@ body{
     font-size: 1rem;
 }
 .tweet-title-details{
-    color: #6E767D;
+    color: var(--color-details);
 }
 .tweet-text{
     color: #D9D9D9;
@@ -186,7 +192,7 @@ body{
     gap: 20px;
 }
 
-.sidebar, .trends{
+.sidebar{
     padding: .5rem 0;
     font-family: 'Inter', sans-serif;
 }
@@ -238,6 +244,11 @@ ul{
     width: var(--width-profile-photo);
     flex: var(--flex-profile-photo);
 }
+.profilePhoto-setting img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
 .title-profileSetting{
     display: flex;
 }
@@ -247,13 +258,15 @@ ul{
     position: sticky;
     top: -300px;
     height: 100%;
-}
-.search-tweet, .trending-list, .follow-list{
-    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
 }
 .search-tweet{
     display: flex;
     align-items: center;
+    height: var(--height-header);
+    position: sticky;
+    top: 0;
+    background-color: black;
 }
 .search-tweet input{
     background-color: #202327;
@@ -273,6 +286,9 @@ ul{
     border-radius: 15px;
     background-color: #202327;
 }
+.trending-list{
+    margin: .5rem 0 1rem 0;
+}
 .container-trending-list, .container-follow-list{
     padding: 1rem 1rem 0 1rem;
 }
@@ -283,10 +299,20 @@ ul{
     padding-right: 1rem;
     margin-bottom: 1.5rem;
 }
+.container-title-trending-list h3, .container-title-follow-list h3{
+    font-size: var(--font-size-title);
+ }
 .trendLists{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+}
+.tag-trend{
+    font-size: 1rem;
+}
+.subtitle, .countTweet{
+    font-size: var(--font-size-subtitle-and-countTweet);
+    color: var(--color-details);
 }
 .show-more-button{
     color: #1D9BF0;
@@ -313,7 +339,7 @@ ul{
 }
 .avatar-follow img{
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 100%;
 }
 .profile-Autor-follow{
@@ -336,8 +362,38 @@ ul{
 }
 .photo-curvature{
     width: 100%;
+    height: 200px;
 }
 .photo-curvature img{
     width: 100%;
-    height: 30vh;
+    height: 100%;
+ 
+}
+.photo-profile{
+    height: 133.6px;
+    width: 133.6px;
+    flex:  133.6px;
+    position: absolute;
+    margin: -70px 0 0 1rem;
+}
+.photo-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.container-edit-profile-button{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 60px;
+    padding: 1rem;
+}
+.button-edit-profile{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 15px;
+    border: 1px solid #2F3336;
 }
