@@ -4,6 +4,7 @@ body{
     color: white;
     margin: 0 auto;
     max-width: 1800px;
+    line-height: 1.5;
 }
 #root{
     width: 100%;
