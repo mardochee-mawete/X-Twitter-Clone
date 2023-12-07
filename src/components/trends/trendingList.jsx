@@ -18,7 +18,7 @@ export function TrendLists({subtitle,tag, countTweet}){
 export function TrendingList(){
     return(
         <div className="trending-list">
-            <div className="container-trending-list">
+            <div>
                 <div className="container-title-trending-list">
                     <h3>Trends for you</h3>
                     <SettingIcon />

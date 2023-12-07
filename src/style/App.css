@@ -9,6 +9,8 @@
     --font-size-subtitle-and-countTweet : .8125rem; 
     --color-details : #6E767D;
     --height-header : 53px;
+    --primary-hover-link-background-color: #1a1a1a;
+    --second-hover-link-background-color: #2F3336;
 }
 
 body{
@@ -40,6 +42,7 @@ body{
     position: sticky;
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
 }
 .top-tweets {
     width: 1.5rem;
@@ -225,19 +228,23 @@ ul{
    margin-right: 1rem;
 }
 .list-navigation li:hover{
-    background-color: #1a1a1a;
+    background-color: var(--primary-hover-link-background-color);
 }
 .button-nav-tweet{
     padding: .9rem 6rem;
-    margin: 1.2rem 0 16vh 0;
+    margin: 1.2rem 0 14vh 0;
 }
 .profileSetting{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: .5rem 1rem;
     gap: 1rem;
     font-size: 1rem;
+    border-radius: 4rem;
+}
+.profileSetting:hover{
+    background-color: var(--primary-hover-link-background-color);
 }
 .profilePhoto-setting{
     height: var(--height-profile-photo);
@@ -289,23 +296,23 @@ ul{
 .trending-list{
     margin: .5rem 0 1rem 0;
 }
-.container-trending-list, .container-follow-list{
-    padding: 1rem 1rem 0 1rem;
-}
 .container-title-trending-list, .container-title-follow-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 1rem;
-    margin-bottom: 1.5rem;
+    padding: 1rem 2rem 1rem 1rem;
 }
 .container-title-trending-list h3, .container-title-follow-list h3{
     font-size: var(--font-size-title);
+    font-weight: bold;
  }
 .trendLists{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    padding: .6rem 1rem;
+}
+.trendLists:hover{
+    background-color: var(--second-hover-link-background-color);
 }
 .tag-trend{
     font-size: 1rem;
@@ -326,11 +333,17 @@ ul{
     font-weight: 600;
     border-radius: 0 0 15px 15px;
 }
+.show-more-button:hover{
+    background-color: var(--second-hover-link-background-color);
+}
 .account-follow{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    padding: .6rem 1rem;
+}
+.account-follow:hover{
+    background-color: var(--second-hover-link-background-color);
 }
 .avatar-follow {
     height: var(--height-profile-photo);
@@ -396,4 +409,46 @@ ul{
     color: #fff;
     border-radius: 15px;
     border: 1px solid #2F3336;
+}
+.about-account{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: 1rem;
+}
+.author-name{
+    font-size: var(--font-size-title);
+    font-weight: bold;
+}
+.author-contact-details, .container-subscription-subscriber{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon-separator-and-profile-details{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.profle-actions{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #2F3336;
+    margin: 0;
+}
+.profle-action{
+    padding: 1rem 2rem;
+    color: var(--color-details);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.profle-action:hover{
+    background-color: var(--primary-hover-link-background-color);
+}
+.profle-action span{
+    padding-bottom: .8rem;
+    border-bottom: .25rem solid transparent;
+}
+.profle-action .postes{
+    border-bottom: .25rem solid #1D9BF0;
 }
