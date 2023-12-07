@@ -2,7 +2,7 @@ import ProfilePhoto from "../avatar";
 import { ReplyIcon, ReposterIcon, LikeIcon, ShareIcon} from "../icon";
 import { TweetTitle } from "../title";
 
-function TweetText({textContent}){
+export function TweetText({textContent}){
     return(
         <span className="tweet-text">
             {textContent}
@@ -10,7 +10,7 @@ function TweetText({textContent}){
     )
 }
 
-function TweetImage({source}){
+export function TweetImage({source}){
     if(source){
         return(
             <div className="tweet-image">
@@ -20,7 +20,7 @@ function TweetImage({source}){
     }
 }
 
-function TweetBody({author, address, datePublication, textContent, sourceImageTweet}){
+export function TweetBody({author, address, datePublication, textContent, sourceImageTweet}){
    
     return(
         <div className="tweet-body">
@@ -31,7 +31,7 @@ function TweetBody({author, address, datePublication, textContent, sourceImageTw
     )
 }
 
-function TweetActions({valueReply, valueReposter, valueLike, valueShare}){
+export function TweetActions({valueReply, valueReposter, valueLike, valueShare}){
     return(    
         <div className="tweet-actions">
             <div className="tweet-action">
@@ -62,7 +62,7 @@ function TweetActions({valueReply, valueReposter, valueLike, valueShare}){
     )
 }
 
-function TweetData({sourceProfilePhoto, author, address, datePublication, textContent, sourceImageTweet, valueReply, valueReposter, valueLike, valueShare }){
+export function TweetData({sourceProfilePhoto, author, address, datePublication, textContent, sourceImageTweet, valueReply, valueReposter, valueLike, valueShare }){
     return(
         <div className="tweet">
             <ProfilePhoto source={sourceProfilePhoto } className="tweet-avatar"/>

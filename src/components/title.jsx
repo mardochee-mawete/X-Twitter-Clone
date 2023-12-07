@@ -15,7 +15,6 @@ export function TweetTitleAuthor({value}){
         </h3>
     )
 }
-
 export function TweetTitleDetails({value}){
     return(
         <span className="tweet-title-details">
