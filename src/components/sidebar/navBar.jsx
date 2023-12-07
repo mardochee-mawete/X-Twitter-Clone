@@ -2,7 +2,7 @@ import { HomeIcon, ExploreIcon, NotificationsIcon, MessagesIcon, BookmarksIcon, 
 
 export default function NavBar(){
     return(
-        <nav className="nav-bar">
+        <nav>
             <ul className="list-navigation">
                 <li>  
                     <TwitterIcon />

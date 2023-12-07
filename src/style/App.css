@@ -175,17 +175,21 @@ body{
     gap: 20px;
 }
 
-.sidebar{
+.sidebar, .trends{
     padding: 1.5rem 0;
     font-family: 'Inter', sans-serif;
 }
-.nav-bar{
-    padding: 0 1rem;
+
+.sidebar{
+    flex: 0 0 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .button-nav-tweet{
-    padding: .9rem 5rem;
+    padding: .9rem 6rem;
 }
-.list-navigation{
+ul{
     list-style: none;
 }
 .list-navigation li{
@@ -212,4 +216,57 @@ body{
 }
 .title-profileSetting{
     display: flex;
+}
+
+.trends{
+    flex: 0 0 300px;
+}
+.search-tweet, .trending-list, .follow-list{
+    margin-bottom: 1rem;
+}
+.search-tweet{
+    display: flex;
+    align-items: center;
+}
+.search-tweet input{
+    background-color: #202327;
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 42px;
+    padding: 0 0.5rem 0 3.5rem;
+    color: #fff;
+}
+.search-tweet svg{
+    position: absolute;
+    margin-left: 1rem;
+}
+.trending-list, .follow-list{
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: #202327;
+}
+.container-title-trending-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+.trendLists{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.tag-trend{
+    font-size: 1.2rem;
+}
+.show-more-button{
+    color: #1D9BF0;
+    height: 50px;
+    width: 118px;
+    background-color: #202327;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
