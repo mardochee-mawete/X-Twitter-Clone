@@ -1,6 +1,6 @@
-import NavBar from "./navBar"
+import NavBar from "./nav-bar"
 import Button from "../button"
-import ProfileSetting from "./profileSetting"
+import ProfileSetting from "./profile-setting"
 
 export default function Sidebar(){
     return(

@@ -1,4 +1,4 @@
-import InputText from "../inputText"
+import InputText from "../input-text"
 import { SearchIcon } from "../icon"
 
 

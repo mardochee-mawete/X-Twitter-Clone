@@ -1,4 +1,4 @@
-export default function ProfilePhoto({className,source}){
+export default function Avatar({className,source}){
     if(source){
         return(
             <div className={className}>

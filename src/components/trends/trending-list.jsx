@@ -1,19 +1,7 @@
-import { SettingIcon, MoreIconDot } from "../icon"
+import { SettingIcon} from "../icon"
 import Button from "../button"
+import TrendLists from "./trend-lists"
 
-
-export function TrendLists({subtitle,tag, countTweet}){
-    return(
-        <div className="trendLists">
-            <ul>
-                <li className="subtitle">{subtitle}</li>
-                <li className="tag-trend">{tag}</li>
-                <li className="countTweet">{countTweet}</li>
-            </ul>
-            <MoreIconDot />
-        </div>
-    )
-}
 
 export function TrendingList(){
     return(
