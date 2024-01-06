@@ -3,7 +3,7 @@ import { MoreIconDot } from "../icon"
 
 export default function TrendLists({subtitle,tag, countTweet}){
     return(
-        <div className="trendLists">
+        <div className="trend-lists">
             <ul>
                 <li className="subtitle">{subtitle}</li>
                 <li className="tag-trend">{tag}</li>

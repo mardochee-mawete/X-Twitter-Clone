@@ -1,15 +1,16 @@
-import ProfilePhoto from "../avatar"
-import { TweetTitleAuthor, TweetTitleDetails } from "../title"
+import Avatar from "../avatar"
+import Pseudo from "../pseudo"
+import Username from "../username"
 import { PrivateIcon, MoreIconDot } from "../icon"
 
 export default function ProfileSetting(){
     return(
-        <div className="profileSetting">
-               <ProfilePhoto source="src/images/profile-photo.png" className="profilePhoto-setting"/>
-               <div className="title-profileSetting">
+        <div className="profile-setting">
+               <Avatar source="src/images/profile-photo.png" />
+               <div className="title-profile-setting">
                     <div>
-                        <TweetTitleAuthor value="Bradley Ortiz"/>
-                        <TweetTitleDetails value="@bradley..." />
+                        <Pseudo value="Bradley Ortiz" />
+                        <Username value="@bradley..." />
                     </div>
                     <PrivateIcon />
                </div>

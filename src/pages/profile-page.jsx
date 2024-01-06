@@ -2,7 +2,7 @@
 // import Header from "../components/header"
 // import ProfilePhoto from "../components/avatar"
 // import Button from "../components/button"
-// import { TweetTitleDetails } from "../components/title"
+// import { TitleDetails } from "../components/title"
 // import { CalendarIcon, LinkIcon, LocationIcon } from "../components/icon"
 
 // export function CheckExistenceOfDataWithImage({children, getValue}){
@@ -25,10 +25,11 @@
 //             <div className="container-edit-profile-button">
 //                 <Button value="Edit profile" className="button-edit-profile"/>
 //             </div>
-//             <div className="about-account">
+            
+//             .3021  <div className="about-account">
 //               <div>
 //                 <h3 className="author-name">{author}</h3>
-//                 <TweetTitleDetails value={address} />
+//                 <TitleDetails value={address} />
 //               </div>
 //               <div>
 //                 <span>{biography}</span>
@@ -36,7 +37,7 @@
 //               <div className="author-contact-details">
 //                 <CheckExistenceOfDataWithImage getValue ={location}>
 //                     <LocationIcon />
-//                     <TweetTitleDetails value={location} />
+//                     <TitleDetails value={location} />
 //                 </CheckExistenceOfDataWithImage>
 //                 <CheckExistenceOfDataWithImage getValue ={websiteLink}>
 //                     <LinkIcon />
@@ -45,16 +46,16 @@
 //                 <CheckExistenceOfDataWithImage getValue ={yearJoined}>
 //                     <CalendarIcon />
 //                     <div>
-//                         <TweetTitleDetails value="Joined Twitter in January" /> <TweetTitleDetails value={yearJoined} />
+//                         <TitleDetails value="Joined Twitter in January" /> <TitleDetails value={yearJoined} />
 //                     </div>
 //                 </CheckExistenceOfDataWithImage>
 //               </div>
 //               <div className="container-subscription-subscriber">
 //                 <div>
-//                     <span>{numberSubscriptions}</span> <TweetTitleDetails value="subscriptions" />
+//                     <span>{numberSubscriptions}</span> <TitleDetails value="subscriptions" />
 //                 </div>
 //                 <div>
-//                     <span>{numberSubscribers}</span> <TweetTitleDetails value="subscribers" />
+//                     <span>{numberSubscribers}</span> <TitleDetails value="subscribers" />
 //                 </div>
 //               </div> 
 //             </div>

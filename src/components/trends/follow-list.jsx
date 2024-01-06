@@ -11,7 +11,7 @@ export function FollowList(){
                     </h3>
                 </div>
                 <AccountToFollow sourceProfileFollow="src/images/Tweet-Profile-Photo2.png" authorAccountFollow="The New York Times" addressAccountFollow="@nytimes"/>
-                <AccountToFollow sourceProfileFollow="src/images/Tweet-Profile-Photo1.png" authorAccountFollow="CNN" addressAccountFollow="CNN"/>
+                <AccountToFollow sourceProfileFollow="src/images/Tweet-Profile-Photo1.png" authorAccountFollow="CNN" addressAccountFollow="@CNN"/>
                 <AccountToFollow sourceProfileFollow="src/images/iconTweeter.png"  authorAccountFollow="Twitter" addressAccountFollow="@Twitter"/>
             </div>
             <div>

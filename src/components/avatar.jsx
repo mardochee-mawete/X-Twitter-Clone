@@ -1,7 +1,7 @@
-export default function Avatar({className,source}){
+export default function Avatar({source}){
     if(source){
         return(
-            <div className={className}>
+            <div className="avatar">
                 <img src={source} alt="avatar" />
             </div>
         )

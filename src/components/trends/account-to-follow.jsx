@@ -1,18 +1,20 @@
-import ProfilePhoto from "../avatar"
+import Avatar from "../avatar"
 import Button from "../button"
 import { BadgeIcon } from "../icon"
+import Pseudo from "../pseudo"
+import Username from "../username"
 
 
 export default function AccountToFollow({sourceProfileFollow, authorAccountFollow, addressAccountFollow}){
     return(
-        <div className="account-follow">
-            <div className="profile-Autor-follow">
-                <ProfilePhoto source={sourceProfileFollow}  className="avatar-follow"/>
+        <div className="account-to-follow">
+            <div className="account-details-to-follow">
+                <Avatar source={sourceProfileFollow} />
                 <div>
-                    <ul>
-                        <li className="tweet-title-author">{authorAccountFollow}   <BadgeIcon /> </li>
-                        <li className="tweet-title-details">{addressAccountFollow}</li>
-                    </ul>
+                    <div className="body-pseudo-account-to-follow">
+                        <Pseudo value={authorAccountFollow}/><BadgeIcon />
+                    </div>
+                    <Username value={addressAccountFollow}/>
                 </div>
             </div>
             <Button value="Follow" className="button-follow"/>
