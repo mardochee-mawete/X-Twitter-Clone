@@ -7,7 +7,7 @@ export default function ProfileSetting(){
     return(
         <div className="profile-setting">
                <Avatar source="src/images/profile-photo.png" />
-               <div className="title-profile-setting">
+               <div className="profile-setting-body">
                     <div>
                         <Pseudo value="Bradley Ortiz" />
                         <Username value="@bradley..." />

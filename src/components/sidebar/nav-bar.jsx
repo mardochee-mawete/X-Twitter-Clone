@@ -12,42 +12,42 @@ export default function NavBar(){
                 </li>
                 <li>
                     <NavLink to='/' className="nav-link">
-                        <HomeIcon /> <span className="link-name">Home</span>
+                        <HomeIcon /> <span>Home</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink  className="nav-link">
-                        <ExploreIcon /> <span className="link-name">Explore</span>
+                        <ExploreIcon /> <span>Explore</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink  className="nav-link">
-                        <NotificationsIcon /> <span className="link-name">Notifications</span>
+                        <NotificationsIcon /> <span>Notifications</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink  className="nav-link">
-                        <MessagesIcon /> <span className="link-name">Messages</span>
+                        <MessagesIcon /> <span>Messages</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink  className="nav-link">
-                        <BookmarksIcon /> <span className="link-name">Bookmarks</span>
+                        <BookmarksIcon /> <span>Bookmarks</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink className="nav-link">
-                        <ListsIcon /> <span className="link-name">Lists</span>
+                        <ListsIcon /> <span>Lists</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to='/profile' className="nav-link">
-                        <ProfileIcon /> <span className="link-name">Profile</span>
+                        <ProfileIcon /> <span>Profile</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to='' className="nav-link">
-                        <MoreIcon /> <span className="link-name">More</span>
+                        <MoreIcon /> <span>More</span>
                     </NavLink>
                 </li>
             </ul>

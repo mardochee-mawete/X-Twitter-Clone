@@ -8,7 +8,7 @@ export default function ProfileActions(){
                 <span>Answers</span>
             </div>
             <div className="profle-action">
-                <span>Featured tweets</span>
+                <span>Notable tweets</span>
             </div>
             <div className="profle-action">
                 <span>Media</span>

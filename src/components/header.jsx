@@ -1,4 +1,4 @@
-import {PageTitle} from './title';
+import PageTitle from "./page-title"
 
 export default function Header({valuePageTitle, children}){
     return(

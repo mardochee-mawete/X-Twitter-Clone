@@ -12,7 +12,7 @@ export default function Tweet(){
               <div className="tweet" key={tweet.id}>
                 <Avatar source={tweet.sourceProfilePhoto } />
                 <div className="tweet-content">
-                    <TweetBody author={tweet.author} tag={tweet.tag} datePublication={tweet.datePublication} textContent={tweet.textContent} sourceImageTweet={tweet.sourceImageTweet}/>
+                    <TweetBody author={tweet.author} username={tweet.username} datePublication={tweet.datePublication} textContent={tweet.textContent} sourceImageTweet={tweet.sourceImageTweet}/>
                     <TweetActions valueReply={tweet.valueReply} valueReposter={tweet.valueReposter} valueLike={tweet.valueLike} valueShare={tweet.valueShare}/>
                 </div>
               </div>

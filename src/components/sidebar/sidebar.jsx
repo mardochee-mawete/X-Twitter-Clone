@@ -6,7 +6,7 @@ export default function Sidebar(){
     return(
         <div className="sidebar">
             <NavBar />
-            <Button value="Tweet" className="button button-nav-tweet"/>
+            <Button value="Tweet" className="button tweet-button-xl"/>
             <ProfileSetting />
         </div>
     )

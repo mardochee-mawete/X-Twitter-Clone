@@ -211,7 +211,7 @@ body{
     border-radius: 30px;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     color: #D9D9D9;
     font-size: var(--font-size-link-nav);
     font-weight: 600;
@@ -220,7 +220,10 @@ body{
 .nav-link:hover{
     background-color: var(--primary-hover-link-background-color);
 }
-.button-nav-tweet{
+.nav-link svg{
+    width: 30px;
+}
+.tweet-button-xl{
     padding: .9rem 6rem;
     margin: 1.2rem 0 14vh 0;
 }
@@ -236,7 +239,7 @@ body{
 .profile-setting:hover{
     background-color: var(--primary-hover-link-background-color);
 }
-.title-profile-setting{
+.profile-setting-body{
     display: flex;
 }
 /**************************** trends *****************************/
@@ -355,23 +358,22 @@ body{
 .profile .top-tweets{
     display: none;
 }
-.photo-curvature{
+.cover-image{
     width: 100%;
     height: 200px;
 }
-.photo-curvature img{
+.cover-image img{
     width: 100%;
     height: 100%;
- 
 }
-.photo-profile{
+.profile-photo{
     height: 133.6px;
     width: 133.6px;
     flex:  133.6px;
     position: absolute;
     margin: -70px 0 0 1rem;
 }
-.photo-profile img{
+.profile-photo img{
     width: 100%;
     height: 100%;
     border-radius: 100%;
@@ -399,10 +401,10 @@ body{
     padding: 1rem;
 }
 .author-name{
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-title-page);
     font-weight: bold;
 }
-.author-contact-details, .container-subscription-subscriber{
+.user-contact-details, .container-subscription-subscriber{
     display: flex;
     align-items: center;
     gap: 1rem;
