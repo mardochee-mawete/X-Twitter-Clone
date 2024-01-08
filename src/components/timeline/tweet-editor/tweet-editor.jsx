@@ -5,7 +5,7 @@ import TweetEditorButtons from "./tweet-editor-buttons";
 
  export default function TweetEditor(){
     return(
-        <div className="tweet-editor">
+        <section className="tweet-editor">
             <Avatar source="src/images/profile-photo.png" />
             <div className="tweet-editor-form">
                 <form action="">
@@ -13,6 +13,6 @@ import TweetEditorButtons from "./tweet-editor-buttons";
                     <TweetEditorButtons />
                 </form>
             </div>
-        </div>
+        </section>
     )
 }

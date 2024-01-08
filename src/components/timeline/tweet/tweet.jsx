@@ -9,13 +9,13 @@ export default function Tweet(){
       <>
         {
             tweetData.map(tweet =>(
-              <div className="tweet" key={tweet.id}>
+              <article className="tweet" key={tweet.id}>
                 <Avatar source={tweet.sourceProfilePhoto } />
                 <div className="tweet-content">
                     <TweetBody author={tweet.author} username={tweet.username} datePublication={tweet.datePublication} textContent={tweet.textContent} sourceImageTweet={tweet.sourceImageTweet}/>
                     <TweetActions valueReply={tweet.valueReply} valueReposter={tweet.valueReposter} valueLike={tweet.valueLike} valueShare={tweet.valueShare}/>
                 </div>
-              </div>
+              </article>
             ))
         }
       </>

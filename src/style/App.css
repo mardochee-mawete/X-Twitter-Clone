@@ -58,6 +58,7 @@ body{
     height: var(--avatar-height);
     width: var(--avatar-width);
     flex: var(--flex-profile-photo);
+    cursor: pointer;
 }
 .avatar img {
     width: 100%;
@@ -104,9 +105,10 @@ body{
     justify-content: flex-start;
     gap: 1rem;
 }
-.tweet-editor-actions button {
+.tweet-editor-actions svg {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .button {
     text-transform: capitalize;
@@ -144,15 +146,22 @@ body{
     align-items: center;
     gap: 10px;
     font-size: 1rem;
+    cursor: pointer;
 }
 .tweet-title svg{
     width: 1.2rem;
     height: auto;
 }
+.tweet-title .pseudo:hover{
+    text-decoration: underline;
+}
 .tweet-title-details{
     color: var(--second-color-text);
     font-weight: normal;
     font-size: 1rem;
+}
+.tweet-title-details:last-child:hover{
+    text-decoration: underline;
 }
 .tweet-text{
     color: #D9D9D9;
@@ -187,6 +196,7 @@ body{
     align-items: center;
     gap: 20px;
     width: 25%;
+    cursor: pointer;
 }
 /**************************** sidebar *****************************/
 .sidebar{
@@ -279,13 +289,15 @@ body{
 .trending-list{
     margin: .5rem 0 1rem 0;
 }
-.container-title-trending-list, .container-title-follow-list{
+.body-title-trending-list, .body-title-follow-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.body-title-trending-list, .body-title-follow-list{
     padding: 1rem 2rem 1rem 1rem;
 }
-.container-title-trending-list h3, .container-title-follow-list h3{
+.title-trends{
     font-size: var(--font-size-title);
     font-weight: bold;
  }

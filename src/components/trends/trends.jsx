@@ -5,10 +5,10 @@ import { FollowList } from "./follow-list"
 
 export default function Trends(){
     return(
-        <div className="trends">
+        <aside className="trends">
             <Search />
             <TrendingList  />
             <FollowList />
-        </div>
+        </aside>
     )
 }

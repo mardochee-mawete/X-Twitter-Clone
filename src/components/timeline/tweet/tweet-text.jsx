@@ -1,7 +1,7 @@
 export default function TweetText({textContent}){
     return(
-        <span className="tweet-text">
+        <p className="tweet-text">
             {textContent}
-        </span>
+        </p>
     )
 }
