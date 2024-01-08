@@ -1,11 +1,13 @@
 import React from 'react';
+import Sidebar from './sidebar/sidebar';
+import Trends from './trends/trends';
 
 function Layout({children}) {
     return (
         <>
-            <div className="left-sidebar"/>
+            <Sidebar/>
             {children}
-            <div className="right-sidebar" />
+            <Trends/>
         </>
     );
 }
